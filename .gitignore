@@ -1,0 +1,13 @@
+# Simulation artifacts
+test/sim_build/
+test/__pycache__/
+test/*.fst
+test/results.xml
+
+# Generated data
+data/*.csv
+data/*.png
+
+# Python
+*.pyc
+__pycache__/
