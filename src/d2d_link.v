@@ -1,7 +1,6 @@
 `default_nettype none
 
-module d2d_link #(parameter LATENCY = 4, parameter integer E_PER_SPIKE = 10, parameter DATA_W = 4)
-(
+module d2d_link #(parameter LATENCY = 4, parameter integer E_PER_SPIKE = 10, parameter DATA_W = 4)(
     input  wire              clk, rst_n,
     input  wire [DATA_W-1:0] tx_spikes,
     output wire [DATA_W-1:0] rx_spikes,
