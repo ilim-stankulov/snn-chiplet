@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Ilim Stankulov
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 `default_nettype none
 
 module snn_tile #(parameter THRESH = 8'sd64, SHIFT = 3) (

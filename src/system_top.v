@@ -1,4 +1,10 @@
+/*
+ * Copyright (c) 2026 Ilim Stankulov
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 `default_nettype none
+
 module snn_system #(parameter THRESH = 8'sd64, SHIFT = 3, D2D_LATENCY = 4, parameter integer E_PER_SPIKE = 10)(
     input  wire        clk, rst_n, ena,
     input  wire        c0_s_data, c0_s_clk_en, c0_mode_prog,

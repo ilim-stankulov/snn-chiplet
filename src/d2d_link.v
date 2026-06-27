@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Ilim Stankulov
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 `default_nettype none
 
 module d2d_link #(parameter LATENCY = 4, parameter integer E_PER_SPIKE = 10, parameter DATA_W = 4)(
