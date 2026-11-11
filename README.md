@@ -1,6 +1,6 @@
 # snn-chiplet
 
-Splits a spiking neural network across two chiplets, measures the die-to-die energy cost, and finds the best neuron assignment to minimise it.
+A toy model of splitting a spiking neural network across two chiplets: it estimates die-to-die traffic and energy for each possible neuron assignment and finds the split that minimises it.
 
 ## Background
 
@@ -45,6 +45,9 @@ python3 analysis/partition.py
 
 ## Results
 
-- Optimal partition reduces cross-die traffic by 55% vs the worst split
-- D2D link costs 10× more energy per spike than an on-die connection
-- Only 2 of 70 balanced splits achieve the minimum cut weight
+On a hand-made 8-neuron network with two strongly connected groups of four:
+
+- The best split cuts 64 units of cross-die connection weight, against 144 for the worst split.
+  Because the network was built with two groups, the optimiser recovering them is a sanity check,
+  not a discovery.
+- The best split is unique up to swapping the two dies.
